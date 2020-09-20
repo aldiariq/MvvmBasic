@@ -67,6 +67,13 @@
             android:layout_height="wrap_content">
         </Button>
 
+        <ProgressBar
+            android:id="@+id/pblogin"
+            android:visibility="gone"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ProgressBar>
+
 
     </LinearLayout>
 </layout>

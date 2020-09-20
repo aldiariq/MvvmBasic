@@ -38,6 +38,7 @@ class SignupViewModel : ViewModel() {
 
     fun onLoginButtonClickSignup(view: View){
         Intent(view.context, LoginActivity::class.java).also {
+            
             view.context.startActivity(it)
         }
     }

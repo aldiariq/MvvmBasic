@@ -20,7 +20,7 @@ class LoginViewModel : ViewModel() {
         }
 
         Coroutines.main {
-            val response = UserRepository().userLogin(emaillogin!!, passwordlogin!!, false)
+            val response = UserRepository().userLogin(emaillogin!!, passwordlogin!!, 0)
 
             if (response.isSuccessful){
                 loginListener?.onSuccesslogin(response.body()?.user!!)
